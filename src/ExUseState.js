@@ -2,13 +2,20 @@ import React, { useState } from 'react';
 
 export default function ExUseState() {
   let [no, setNo] = useState(0);
+  let [err, setErr] = useState('');
 
   function Incerement() {
     setNo(no + 1);
+    setErr('');
   }
 
   function Decerement() {
-    setNo(no - 1);
+    if (no == 0) {
+      setNo(0);
+      setErr("You Can't put Minus Value");
+    } else {
+      setNo(no - 1);
+    }
   }
 
   return (
@@ -27,6 +34,9 @@ export default function ExUseState() {
             <button className="btn btn-sm btn-dark" onClick={Decerement}>
               Decerement
             </button>
+          </div>
+          <div className="col-4">
+            <span>{err}</span>
           </div>
         </div>
       </div>
