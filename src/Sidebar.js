@@ -22,6 +22,11 @@ function Sidebar() {
             Digital Clock
           </Link>
         </li>
+        <li>
+          <Link as={Link} to="/ExForm">
+            Form - Controll Component
+          </Link>
+        </li>
       </ul>
     </>
   );
