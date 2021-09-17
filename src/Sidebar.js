@@ -18,6 +18,11 @@ function Sidebar() {
           </Link>
         </li>
         <li>
+          <Link as={Link} to="/ExUseStateTwo">
+            Use State Example 2
+          </Link>
+        </li>
+        <li>
           <Link as={Link} to="/ExUTimer">
             Digital Clock
           </Link>

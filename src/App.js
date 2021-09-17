@@ -3,6 +3,7 @@ import Sidebar from './Sidebar';
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './Home';
 import ExUseState from './ExUseState';
+import ExUseStateTwo from './ExUseStateTwo';
 import ExUTimer from './ExUTimer';
 import ExForm from './ExForm';
 import Error from './Error';
@@ -31,6 +32,10 @@ export default function App() {
 
           <Route path="/ExUseState">
             <ExUseState />
+          </Route>
+
+          <Route path="/ExUseStateTwo">
+            <ExUseStateTwo />
           </Route>
 
           <Route path="/ExUTimer">
