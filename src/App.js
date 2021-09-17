@@ -6,9 +6,19 @@ import ExUseState from './ExUseState';
 import ExUTimer from './ExUTimer';
 import ExForm from './ExForm';
 import Error from './Error';
-import ExChiledRouter from './ExChiledRouter';
+import OuterFunction from './OuterFunction';
 
 export default function App() {
+  function ChiledFunctonCall() {
+    return (
+      <>
+        <div>
+          <h1>ChiledFunctonCall</h1>
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
       <Router>
@@ -31,12 +41,17 @@ export default function App() {
             <ExForm />
           </Route>
 
-          <Route path="*">
-            <Error />
+          <Route path="/OuterFunction" exact>
+            <OuterFunction />
           </Route>
 
-          <Route path="/ExChiledRouter">
-            <ExChiledRouter />
+          <Route path="/OuterFunction/ChiledFunctonCall">
+            <ChiledFunctonCall />
+          </Route>
+
+          {/* Error Router Ne Last MA Rakhvanu */}
+          <Route path="">
+            <Error />
           </Route>
         </Switch>
       </Router>

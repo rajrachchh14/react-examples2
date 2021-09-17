@@ -28,14 +28,13 @@ function Sidebar() {
           </Link>
         </li>
         <li>
-          <Link as={Link} to="/xyz">
-            404 Page Not Found
+          <Link as={Link} to="/OuterFunction/ChiledFunctonCall">
+            Chiled Function Call
           </Link>
         </li>
-
         <li>
-          <Link as={Link} to="/ExChiledRouter">
-            Chiled Router
+          <Link as={Link} to="/xyz">
+            404 Page Not Found
           </Link>
         </li>
       </ul>
