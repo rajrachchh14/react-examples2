@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 
 export default function ExUseStateTwo() {
-  // let [Time, setCtime] = useState(Clock);
-
   const [Formdata, SetFormData] = useState({
     fname: '',
     lname: '',
