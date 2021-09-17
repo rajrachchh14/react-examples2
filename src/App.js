@@ -30,7 +30,7 @@ export default function App() {
             <ExForm />
           </Route>
 
-          <Route path="">
+          <Route path="*">
             <Error />
           </Route>
         </Switch>
