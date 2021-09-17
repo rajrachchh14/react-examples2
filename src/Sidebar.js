@@ -8,7 +8,7 @@ function Sidebar() {
       <h1>Examples</h1>
       <ul>
         <li>
-          <Link as={Link} to="/Home">
+          <Link as={Link} to="/">
             Home
           </Link>
         </li>
@@ -30,6 +30,12 @@ function Sidebar() {
         <li>
           <Link as={Link} to="/xyz">
             404 Page Not Found
+          </Link>
+        </li>
+
+        <li>
+          <Link as={Link} to="/ExChiledRouter">
+            Chiled Router
           </Link>
         </li>
       </ul>

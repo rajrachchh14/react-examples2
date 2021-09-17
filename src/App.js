@@ -6,6 +6,7 @@ import ExUseState from './ExUseState';
 import ExUTimer from './ExUTimer';
 import ExForm from './ExForm';
 import Error from './Error';
+import ExChiledRouter from './ExChiledRouter';
 
 export default function App() {
   return (
@@ -14,7 +15,7 @@ export default function App() {
         <Sidebar />
 
         <Switch>
-          <Route path="/Home" exact>
+          <Route path="/" exact>
             <Home />
           </Route>
 
@@ -32,6 +33,10 @@ export default function App() {
 
           <Route path="*">
             <Error />
+          </Route>
+
+          <Route path="/ExChiledRouter">
+            <ExChiledRouter />
           </Route>
         </Switch>
       </Router>
