@@ -33,7 +33,8 @@ export default function ExUseStateTwo() {
 
   const SubmitData = (e) => {
     e.preventDefault();
-    console.log(e.target.value);
+    console.log(Formdata.fname);
+    console.log(Formdata.lname);
   };
 
   return (
