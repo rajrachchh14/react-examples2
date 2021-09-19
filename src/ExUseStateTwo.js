@@ -13,6 +13,7 @@ export default function ExUseStateTwo() {
     // const value = e.target.value;
     // const name = e.target.name;
 
+    // Object Destructure 
     const { value, name } = e.target;
 
     // It Store Also Old Value
