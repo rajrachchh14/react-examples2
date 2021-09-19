@@ -19,7 +19,13 @@ function Sidebar() {
         </li>
         <li>
           <Link as={Link} to="/ExUseStateTwo">
-            Use State Example 2
+            Use State Example 2 (Login Form)
+          </Link>
+        </li>
+
+        <li>
+          <Link as={Link} to="/ExUseStateThree">
+            Use State Example 3 (Login Form) + ( Rest Operrator)
           </Link>
         </li>
         <li>

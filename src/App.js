@@ -4,6 +4,7 @@ import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './Home';
 import ExUseState from './ExUseState';
 import ExUseStateTwo from './ExUseStateTwo';
+import ExUseStateThree from './ExUseStateThree';
 import ExUTimer from './ExUTimer';
 import ExForm from './ExForm';
 import Error from './Error';
@@ -36,6 +37,10 @@ export default function App() {
 
           <Route path="/ExUseStateTwo">
             <ExUseStateTwo />
+          </Route>
+
+          <Route path="/ExUseStateThree">
+            <ExUseStateThree />
           </Route>
 
           <Route path="/ExUTimer">
