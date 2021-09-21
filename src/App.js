@@ -9,6 +9,7 @@ import ExUTimer from './ExUTimer';
 import ExForm from './ExForm';
 import Error from './Error';
 import OuterFunction from './OuterFunction';
+import According from './According';
 
 export default function App() {
   function ChiledFunctonCall() {
@@ -57,6 +58,10 @@ export default function App() {
 
           <Route path="/OuterFunction/ChiledFunctonCall">
             <ChiledFunctonCall />
+          </Route>
+
+          <Route path="/According">
+            <According />
           </Route>
 
           {/* Error Router Ne Last MA Rakhvanu */}

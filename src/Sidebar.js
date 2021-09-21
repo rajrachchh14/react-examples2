@@ -43,6 +43,12 @@ function Sidebar() {
             Chiled Function Call
           </Link>
         </li>
+
+        <li>
+          <Link as={Link} to="/According">
+            According
+          </Link>
+        </li>
         <li>
           <Link as={Link} to="/xyz">
             404 Page Not Found
