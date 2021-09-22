@@ -1,29 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import AccordingQuestion from './AccordingQuestion';
 
 export default function According() {
+  let [data, setData] = useState(AccordingQuestion);
+  let [show, setShow] = useState(false);
+
+  const Open = () => {
+    if (show === false) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+
   return (
     <>
       <div className="container">
-        <div className="accordion">
-          <div className="card">
-            <div className="card-header">
-              <h2 className="mb-0">
-                <button type="button" className="btn ">
-                  <i>+</i> What is HTML?
-                </button>
-              </h2>
-            </div>
-            <div className="collapse">
-              <div className="card-body">
-                <p>
-                  HTML stands for HyperText Markup Language. HTML is the
-                  standard markup language for describing the structure of web
-                  pages.
-                </p>
+        {data.map((items, index) => (
+          <div className="container">
+            <div className="accordion">
+              <div className="card">
+                <div className="card-header">
+                  <h2 className="mb-0">
+                    <button type="button" className="btn" onClick={Open}>
+                      <i>{!show ? '+' : '-'}</i> {items.title}
+                    </button>
+                  </h2>
+                </div>
+
+                <div className={!show ? 'collapse' : ''}>
+                  <div className="card-body">
+                    <p>{items.info}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </>
   );
