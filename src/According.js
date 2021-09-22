@@ -11,11 +11,11 @@ export default function According() {
     <>
       <div className="container">
         <h3>According Example</h3>
-        <section className="info">
+        <div className="accordion">
           {data.map((question) => (
             <AccordingComponent key={question.id} {...question} />
           ))}
-        </section>
+        </div>
       </div>
     </>
   );
