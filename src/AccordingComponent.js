@@ -7,7 +7,7 @@ export default function AccordingComponent({ title, info }) {
     <>
       <div className="card">
         <div className="card-header">
-          <h6 className="mb-0" onClick={() => setShow(!show)}>
+          <h6 className="mb-0">
             {title}
 
             <button className="btn" onClick={() => setShow(!show)}>
@@ -15,7 +15,8 @@ export default function AccordingComponent({ title, info }) {
             </button>
           </h6>
         </div>
-        <div>{show && <p>{info}</p>}</div>
+        {/* <div>{show && <p>{info}</p>}</div> */}
+        <div>{show ? <p>{info}</p> : ''}</div>
       </div>
     </>
   );
