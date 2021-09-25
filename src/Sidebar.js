@@ -50,6 +50,11 @@ function Sidebar() {
           </Link>
         </li>
         <li>
+          <Link as={Link} to="/UseEffectEx">
+            UseEffectEx
+          </Link>
+        </li>
+        <li>
           <Link as={Link} to="/xyz">
             404 Page Not Found
           </Link>

@@ -10,6 +10,7 @@ import ExForm from './ExForm';
 import Error from './Error';
 import OuterFunction from './OuterFunction';
 import According from './According';
+import UseEffectEx from './UseEffectEx';
 
 export default function App() {
   function ChiledFunctonCall() {
@@ -62,6 +63,10 @@ export default function App() {
 
           <Route path="/According">
             <According />
+          </Route>
+
+          <Route path="/UseEffectEx">
+            <UseEffectEx />
           </Route>
 
           {/* Error Router Ne Last MA Rakhvanu */}
