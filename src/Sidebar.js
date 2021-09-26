@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Navbar, Nav } from 'react-bootstrap'; //  NavLink,
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Sidebar() {
   return (
@@ -8,63 +8,73 @@ function Sidebar() {
       <h1>Examples</h1>
       <ul>
         <li>
-          <Link as={Link} to="/">
+          <NavLink as={Link} to="/" activeClassName="active" exact>
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link as={Link} to="/ExUseState">
+          <NavLink as={Link} to="/ExUseState" activeClassName="active" exact>
             Use State
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link as={Link} to="/ExUseStateTwo">
+          <NavLink as={Link} to="/ExUseStateTwo" activeClassName="active" exact>
             Use State Example 2 (Login Form)
-          </Link>
+          </NavLink>
         </li>
 
         <li>
-          <Link as={Link} to="/ExUseStateThree">
+          <NavLink
+            as={Link}
+            to="/ExUseStateThree"
+            activeClassName="active"
+            exact
+          >
             Use State Example 3 (Login Form) + ( Rest Operrator)
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link as={Link} to="/ExUTimer">
+          <NavLink as={Link} to="/ExUTimer" activeClassName="active" exact>
             Digital Clock
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link as={Link} to="/ExForm">
+          <NavLink as={Link} to="/ExForm" activeClassName="active" exact>
             Form - Controll Component
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link as={Link} to="/OuterFunction/ChiledFunctonCall">
+          <NavLink
+            as={Link}
+            to="/OuterFunction/ChiledFunctonCall"
+            activeClassName="active"
+            exact
+          >
             Chiled Function Call
-          </Link>
+          </NavLink>
         </li>
 
         <li>
-          <Link as={Link} to="/According">
+          <NavLink as={Link} to="/According" activeClassName="active" exact>
             According
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link as={Link} to="/UseEffectEx">
+          <NavLink as={Link} to="/UseEffectEx" activeClassName="active" exact>
             UseEffectEx
-          </Link>
+          </NavLink>
         </li>
 
         <li>
-          <Link as={Link} to="/AxiosEx">
+          <NavLink as={Link} to="/AxiosEx" activeClassName="active" exact>
             AxiosEx
-          </Link>
+          </NavLink>
         </li>
 
         <li>
-          <Link as={Link} to="/xyz">
+          <NavLink as={Link} to="/xyz" activeClassName="active" exact>
             404 Page Not Found
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </>
