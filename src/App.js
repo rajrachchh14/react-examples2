@@ -11,6 +11,7 @@ import Error from './Error';
 import OuterFunction from './OuterFunction';
 import According from './According';
 import UseEffectEx from './UseEffectEx';
+import AxiosEx from './AxiosEx';
 
 export default function App() {
   function ChiledFunctonCall() {
@@ -67,6 +68,10 @@ export default function App() {
 
           <Route path="/UseEffectEx">
             <UseEffectEx />
+          </Route>
+
+          <Route path="/AxiosEx">
+            <AxiosEx />
           </Route>
 
           {/* Error Router Ne Last MA Rakhvanu */}

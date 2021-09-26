@@ -54,6 +54,13 @@ function Sidebar() {
             UseEffectEx
           </Link>
         </li>
+
+        <li>
+          <Link as={Link} to="/AxiosEx">
+            AxiosEx
+          </Link>
+        </li>
+
         <li>
           <Link as={Link} to="/xyz">
             404 Page Not Found
