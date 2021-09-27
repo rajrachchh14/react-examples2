@@ -32,9 +32,11 @@ export default function App() {
 
         <Switch>
           <Route path="/" exact>
-            <Home />
+            <Home /> 
           </Route>
 
+
+          {/*component*/}
           <Route
             path="/ExRender"
             render={() => (
