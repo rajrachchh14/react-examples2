@@ -19,7 +19,12 @@ function Sidebar() {
         </li>
 
         <li>
-          <NavLink as={Link} to="/ExUseParms" activeClassName="active" exact>
+          <NavLink
+            as={Link}
+            to="/ExUseParms/raj"
+            activeClassName="active"
+            exact
+          >
             Use Parms
           </NavLink>
         </li>

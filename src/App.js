@@ -48,7 +48,7 @@ export default function App() {
             <ExUseState />
           </Route>
 
-          <Route path="/ExUseParms">
+          <Route path="/ExUseParms/:fname">
             <ExUseParms />
           </Route>
 
