@@ -19,6 +19,12 @@ function Sidebar() {
         </li>
 
         <li>
+          <NavLink as={Link} to="/ExUseParms" activeClassName="active" exact>
+            Use Parms
+          </NavLink>
+        </li>
+
+        <li>
           <NavLink as={Link} to="/ExRender" activeClassName="active" exact>
             ExRender
           </NavLink>

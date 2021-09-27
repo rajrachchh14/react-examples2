@@ -13,6 +13,7 @@ import According from './According';
 import UseEffectEx from './UseEffectEx';
 import AxiosEx from './AxiosEx';
 import ExRender from './ExRender';
+import ExUseParms from './ExUseParms';
 
 export default function App() {
   function ChiledFunctonCall() {
@@ -32,9 +33,8 @@ export default function App() {
 
         <Switch>
           <Route path="/" exact>
-            <Home /> 
+            <Home />
           </Route>
-
 
           {/*component*/}
           <Route
@@ -46,6 +46,10 @@ export default function App() {
 
           <Route path="/ExUseState">
             <ExUseState />
+          </Route>
+
+          <Route path="/ExUseParms">
+            <ExUseParms />
           </Route>
 
           <Route path="/ExUseStateTwo">
