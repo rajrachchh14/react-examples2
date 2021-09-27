@@ -17,6 +17,13 @@ function Sidebar() {
             Use State
           </NavLink>
         </li>
+
+        <li>
+          <NavLink as={Link} to="/ExRender" activeClassName="active" exact>
+            ExRender
+          </NavLink>
+        </li>
+
         <li>
           <NavLink as={Link} to="/ExUseStateTwo" activeClassName="active" exact>
             Use State Example 2 (Login Form)

@@ -12,6 +12,7 @@ import OuterFunction from './OuterFunction';
 import According from './According';
 import UseEffectEx from './UseEffectEx';
 import AxiosEx from './AxiosEx';
+import ExRender from './ExRender';
 
 export default function App() {
   function ChiledFunctonCall() {
@@ -33,6 +34,13 @@ export default function App() {
           <Route path="/" exact>
             <Home />
           </Route>
+
+          <Route
+            path="/ExRender"
+            render={() => (
+              <ExRender name="This is Example of render for passing props" />
+            )}
+          />
 
           <Route path="/ExUseState">
             <ExUseState />
