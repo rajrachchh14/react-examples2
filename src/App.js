@@ -1,6 +1,11 @@
 import React from 'react';
 import Sidebar from './Sidebar';
-import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
+import {
+  Switch,
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 import Home from './Home';
 import ExUseState from './ExUseState';
 import ExUseStateTwo from './ExUseStateTwo';
@@ -92,6 +97,12 @@ export default function App() {
           <Route path="">
             <Error />
           </Route>
+
+          {/* Alternative for If do not show 404 page for use  Redirect  */}
+
+          {/*}
+          <Redirect to="/" />
+          {*/}
         </Switch>
       </Router>
     </>

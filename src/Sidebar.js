@@ -90,6 +90,12 @@ function Sidebar() {
         </li>
 
         <li>
+          <NavLink as={Link} to="/xxyyzz">
+            Redirect - Alternative for 404 page redirect to home
+          </NavLink>
+        </li>
+
+        <li>
           <NavLink as={Link} to="/xyz" activeClassName="active" exact>
             404 Page Not Found
           </NavLink>
